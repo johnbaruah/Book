@@ -59,6 +59,7 @@
                     <tr> 
                       <th width="5px;">#</th>
                       <th colspan="2" style="text-align: center;" width="100px;">Action</th>  
+                      <th width="60px;">Invoice</th>
                       <th width="60px;">Image</th>
                       <th>Category</th>
                       <th>Book Name</th>
@@ -110,6 +111,7 @@
                             <td class="inpt"><button class="btn btn-success"><a style="color: white;" class="p-0 m-0" href="Accept.php?id=<?php echo $res['id']; ?>">Accept</a></button></td>
                             <td class="inpt"><button class="btn btn-danger"><a style="color: white;" class="p-0 m-0" href="Reject.php?id=<?php echo $res['id']; ?>">Reject</a></button></td>
                           <?php }} ?>
+                            <td class="inpt"><button class="btn btn-primary"><a style="color: white;" class="p-0 m-0" href="invoice.php?id=<?php echo $res['id']; ?>">Invoice</a></button></td>
                             <td><a href="detail.php?id=<?php echo $res['p_id']; ?>"><img class="d-block w-100" src="book_img/<?php echo $p_img1; ?>" alt="First slide" width="40px" height="85px"></a></td>  
                             <td class="inpt"><?php echo $cat_name; ?></td>
                             <td class="inpt"><?php echo $res['p_name']; ?></td>

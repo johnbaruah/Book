@@ -43,7 +43,13 @@
             </tr>
             <br>
             <?php
-      $cat_select_qy = "select * from placeorder";
+
+            if (isset($_POST['submit'])) {
+              $s_date = $_POST['s_date'];
+              $e_date = $_POST['e_date'];
+              }
+    
+      $cat_select_qy = "select * from placeorder WHERE date_time between '$s_date' and LAST_DAY('$e_date')";
       $cat_select_qy2 = mysqli_query($mysqli, $cat_select_qy);
       $num2 = mysqli_num_rows($cat_select_qy2);
       $sl = 0;

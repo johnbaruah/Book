@@ -221,7 +221,7 @@
                                 </form>
                               </div>
                               <div class="col-2">
-                                <form method="post" action="report_print.php" enctype="multipart/form-data">
+                                <form method="post" action="report.php" enctype="multipart/form-data">
                                   <button class="btn btn-primary">Check Report</button>
                                 </form>
                               </div>
